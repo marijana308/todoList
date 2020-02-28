@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css?family=Handlee&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +8,13 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Comfortaa', cursive;
     line-height: 1.4;
+    background-image: linear-gradient(rgb(255, 17, 96), rgb(255, 32, 199));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -21,12 +29,9 @@ a {
 .btn {
     display: inline-block;
     border: none;
-    background: #555;
-    color: white;
-    padding: 7px 20px;
+    background: white;
+    color: rgb(0, 183, 255);
     cursor: pointer;
-}
-
-.btn:hover {
-    background: #666;
+    font-weight: 700;
+    font-size: large;
 }

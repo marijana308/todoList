@@ -1,19 +1,56 @@
 .del {
-    background: #ff0000;
+    background: rgb(0, 183, 255);
     color: white;
     border: none;
     padding: 5px 9px;
     border-radius: 50%;
     cursor: pointer;
     float: right;
+    font-weight: 900;
 }
 
 .todo {
     background: #f4f4f4;
     padding: 10px;
-    border-bottom: 1px #ccc dotted;
+    border-bottom: 1px #ccc solid;
+    margin: auto;
+    color: rgb(131, 131, 131);
 }
 
 .is-complete {
     text-decoration: line-through;
+    color: rgb(0, 183, 255);
+    font-weight: lighter;
+}
+
+.customCheckbox {
+    -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.customCheckbox:active, .customCheckbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.customCheckbox:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #a799a2;
+}
+
+.customCheckbox:checked:after {
+	content: '\2714';
+    font-size: 14px;
+    font-weight: 900;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #f71d8a;
 }

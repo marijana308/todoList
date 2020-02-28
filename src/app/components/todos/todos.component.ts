@@ -26,6 +26,10 @@ export class TodosComponent implements OnInit {
     this.todoService.deleteTodo(todo).subscribe();
   }
 
+  clearTodos() {
+    this.todos.length = 0;
+  }
+
   addTodo(todo: Todo) {
     // tslint:disable-next-line: no-shadowed-variable
     this.todoService.addTodo(todo).subscribe(todo => this.todos.push(todo));
